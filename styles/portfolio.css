@@ -1,0 +1,2427 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(17%, #747474), color-stop(45%, #2a2929), color-stop(94%, #0f0f0f));
+  background: linear-gradient(90deg, #747474 17%, #2a2929 45%, #0f0f0f 94%);
+  font-family: "Odibee Sans", cursive;
+}
+
+body .wrapper {
+  width: 1050px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body a {
+  color: #fff;
+}
+
+body .social {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body .social ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+body .social ul li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+body .social ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: inherit;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+body .social ul li a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #9d9e9e), to(#fff));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #9d9e9e 50%, #fff);
+  background-position: 0 0;
+}
+
+body .social ul li a:hover i {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: #000;
+}
+
+body .social ul li a i {
+  line-height: 35px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #home {
+  width: 100%;
+  height: 100vh;
+}
+
+body #home #navigation {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 9999;
+  background-color: #171717;
+  border-bottom: 2px solid #3d3c3c;
+}
+
+body #home #navigation .logo-container {
+  width: 4em;
+  height: 4em;
+  display: inline-block;
+  margin: 0.5em 0 0;
+}
+
+body #home #navigation .logo-container .logo img {
+  width: 100%;
+}
+
+body #home #navigation #toggle-btn {
+  display: none;
+  float: right;
+  width: 25px;
+  margin: 20px 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+body #home #navigation #toggle-btn .btn-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+body #home #navigation #toggle-btn .btn-line.active-toggle-btn:nth-child(1) {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(42deg) translateY(0.1px);
+          transform: rotate(42deg) translateY(0.1px);
+}
+
+body #home #navigation #toggle-btn .btn-line.active-toggle-btn:nth-child(2) {
+  opacity: 0;
+}
+
+body #home #navigation #toggle-btn .btn-line.active-toggle-btn:nth-child(3) {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-42deg) translateY(0.1px);
+          transform: rotate(-42deg) translateY(0.1px);
+}
+
+body #home #navigation #main-nav {
+  width: 410px;
+  float: right;
+}
+
+body #home #navigation #main-nav #menu {
+  list-style-type: none;
+  text-align: center;
+}
+
+body #home #navigation #main-nav #menu li {
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+}
+
+body #home #navigation #main-nav #menu li.active {
+  background: linear-gradient(45deg, #818080 17%, #a39f9f 45%, #5a5a5a 94%);
+}
+
+body #home #navigation #main-nav #menu li.active a {
+  color: #000;
+}
+
+body #home #navigation #main-nav #menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1em 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-align: center;
+}
+
+body #home #navigation #main-nav #menu li a i {
+  font-size: 1.6rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+body #home #navigation #main-nav #menu li a p {
+  font-size: 0.9rem;
+  font-family: "Squada One", cursive;
+}
+
+body #home #navigation #main-nav #menu li a:hover {
+  background: linear-gradient(45deg, #818080 17%, #a39f9f 45%, #5a5a5a 94%);
+  color: #000;
+}
+
+body #home #navigation #main-nav #menu li a:hover a {
+  color: #000;
+}
+
+body #home #navigation #main-nav #menu li a:hover i {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+body #home #particles-js {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+}
+
+body #home #particles-js .header-info-image-container {
+  width: 1050px;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  grid-gap: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #home #particles-js .header-info-image-container .header-info {
+  text-align: center;
+  margin: 8em auto;
+}
+
+body #home #particles-js .header-info-image-container .header-info h1 {
+  padding: 1em 0 0;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Akronim", cursive;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+body #home #particles-js .header-info-image-container .header-info h5 {
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 1.12rem;
+  letter-spacing: 0.3em;
+}
+
+body #home #particles-js .header-info-image-container .header-image-container {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #949292;
+  background-image: url("../assets/images/header/profile-picture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 1em auto;
+}
+
+body main .home {
+  margin: 5em auto 0;
+}
+
+body main .home .website-skills-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row: auto;
+  grid-gap: 10px;
+  padding: 0 0 6em;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+body main .home .website-skills-container .fast {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+body main .home .website-skills-container .responsive {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+body main .home .website-skills-container .intuitive {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+body main .home .website-skills-container .dynamic {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+body main .home .website-skills-container .website-skill {
+  width: 100%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body main .home .website-skills-container .website-skill .website-skill-image {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+body main .home .website-skills-container .website-skill .fast-img {
+  background-image: url("../assets/images/sections/home/website-skills/fast.jpg");
+}
+
+body main .home .website-skills-container .website-skill .responsive-img {
+  background-image: url("../assets/images/sections/home/website-skills/responsive.jpg");
+}
+
+body main .home .website-skills-container .website-skill .intuitive-img {
+  background-image: url("../assets/images/sections/home/website-skills/intuitive.jpeg");
+}
+
+body main .home .website-skills-container .website-skill .dynamic-img {
+  background-image: url("../assets/images/sections/home/website-skills/dynamic.jpg");
+}
+
+body main .home .website-skills-container .website-skill .website-skills-info {
+  padding: 1em;
+  text-align: center;
+}
+
+body main .home .website-skills-container .website-skill .website-skills-info h3 {
+  letter-spacing: 2px;
+  padding: 0.3em 0;
+  font-size: 1.7rem;
+  font-family: "Squada One", cursive;
+}
+
+body main .home .website-skills-container .website-skill .website-skills-info p {
+  font-size: 1.1rem;
+  letter-spacing: 0.07rem;
+  color: #b2b2b2;
+}
+
+body main .home .video-info-container {
+  background-image: url("../assets//images/sections/home/video/bg-video.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5em 0;
+}
+
+body main .home .video-info-container .video {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body main .home .video-info-container .video video {
+  width: 100%;
+}
+
+body main .home .video-info-container .video-info {
+  padding: 0 0 1.5em;
+  text-align: center;
+}
+
+body main .home .video-info-container .video-info h1 {
+  font-family: "Squada One", cursive;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  padding: 0 0 0.6em;
+}
+
+body main .home .video-info-container .video-info p {
+  font-size: 1.4rem;
+  color: #b2b2b2;
+}
+
+body main .about,
+body main .contact,
+body main .portfolio {
+  padding: 5em 0;
+}
+
+body main .about h2,
+body main .contact h2,
+body main .portfolio h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-family: "Odibee Sans", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+body main .about h2 span,
+body main .contact h2 span,
+body main .portfolio h2 span {
+  line-height: 48px;
+  padding: 0 0 0.3em;
+  border-bottom: 2px solid #fff;
+}
+
+body main .about .about-info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  grid-gap: 0;
+}
+
+body main .about .about-info-container .about-info-title {
+  background-image: url("../assets/images/sections/about/about-info/scratched.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .about .about-info-container .about-info-title .info-title {
+  font-size: 2.95rem;
+  color: #333;
+  font-family: "Squada One", cursive;
+}
+
+body main .about .about-info-container .about-info-content {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .about .about-info-container .about-info-content p {
+  text-align: justify;
+  letter-spacing: 1px;
+  color: #b2b2b2;
+  font-size: 1.1rem;
+  padding: 0 1em;
+  line-height: 1.2em;
+}
+
+body main .about .certificates-section .title-skills,
+body main .about .professional-skills-section .title-skills,
+body main .about .personal-skills-section .title-skills {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 2.2rem;
+}
+
+body main .about .certificates-section .certificates-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  grid-gap: 1em;
+}
+
+body main .about .certificates-section .certificates-container .certificate {
+  position: relative;
+  margin: 0 auto;
+}
+
+body main .about .certificates-section .certificates-container .certificate:hover .face1 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body main .about .certificates-section .certificates-container .certificate:hover .face2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body main .about .certificates-section .certificates-container .certificate .face {
+  width: 280px;
+  height: 180px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face1 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  border-top: 2px solid #484849;
+  border-right: 2px solid #484849;
+  border-left: 2px solid #484849;
+}
+
+body main .about .certificates-section .certificates-container .certificate .microsoft {
+  background-image: url("../assets//images/sections/about/certificates/microsoft.jpeg");
+}
+
+body main .about .certificates-section .certificates-container .certificate .telerik-fe {
+  background-image: url("../assets//images/sections/about/certificates/front-end.png");
+}
+
+body main .about .certificates-section .certificates-container .certificate .telerik-ui-ux {
+  background-image: url("../assets//images/sections/about/certificates/ui-ux-design.png");
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+  -webkit-box-shadow: 0 20px 50px 0 rgba(82, 81, 81, 0.8);
+          box-shadow: 0 20px 50px 0 rgba(82, 81, 81, 0.8);
+  color: #333;
+  -webkit-transform: translateY(-115px);
+          transform: translateY(-115px);
+  border-bottom: 2px solid #484849;
+  border-right: 2px solid #484849;
+  border-left: 2px solid #484849;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 .content h3 {
+  text-align: center;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 .content span {
+  color: #f05425;
+  font-size: 0.75rem;
+  padding: 0.4em 0;
+  display: block;
+  text-align: center;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 .content p {
+  font-size: 1rem;
+  color: #6b6b6b;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 .content a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px 0 0;
+  padding: 0.2em 0.7em;
+  border: 1px solid #000;
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .about .certificates-section .certificates-container .certificate .face2 .content a:hover {
+  color: #fff;
+  background: #333;
+}
+
+body main .about .professional-skills-section {
+  width: 100%;
+  height: auto;
+}
+
+body main .about .professional-skills-section .skills-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 5em 0;
+}
+
+body main .about .professional-skills-section .skills-container .skill {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2px 0;
+  padding: 2px 10px 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0.5)), color-stop(10%, rgba(15, 15, 15, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(10, 10, 10, 0.5) 0%, rgba(15, 15, 15, 0.5) 10%, rgba(0, 0, 0, 0.5));
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+body main .about .professional-skills-section .skills-container .skill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+body main .about .professional-skills-section .skills-container .skill .skill-name {
+  position: relative;
+  width: 100px;
+}
+
+body main .about .professional-skills-section .skills-container .skill .percent {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 15px;
+  margin: 2px 10px 0;
+  background: rgba(10, 10, 10, 0.5);
+  -webkit-box-shadow: 0 0 10px 0 #000;
+          box-shadow: 0 0 10px 0 #000;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+body main .about .professional-skills-section .skills-container .skill .percent .outer-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 100px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px 0 #000;
+          box-shadow: 0 0 2px 0 #000;
+}
+
+body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+  -webkit-animation: professional-skill-animation 2s ease-in-out forwards;
+          animation: professional-skill-animation 2s ease-in-out forwards;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+body main .about .professional-skills-section .skills-container .skill .value {
+  position: relative;
+  width: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+body main .about .professional-skills-section .skills-container .skill #html-outer {
+  width: 90%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #css-outer {
+  width: 75%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #sass-outer {
+  width: 80%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #js-outer {
+  width: 60%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #jq-outer {
+  width: 65%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-js-outer {
+  width: 70%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-redux-outer {
+  width: 50%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-router-outer {
+  width: 65%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #git-outer {
+  width: 60%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #responsive-design-outer {
+  width: 80%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #wordpress-outer {
+  width: 50%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #photoshop-outer {
+  width: 70%;
+}
+
+body main .about .professional-skills-section .skills-container .skill #html-inner {
+  background: linear-gradient(45deg, #be640f, #bd370e);
+}
+
+body main .about .professional-skills-section .skills-container .skill #css-inner {
+  background: linear-gradient(45deg, #0f8cbe, #2832c5);
+}
+
+body main .about .professional-skills-section .skills-container .skill #sass-inner {
+  background: linear-gradient(45deg, #a53b7c, #c90798);
+}
+
+body main .about .professional-skills-section .skills-container .skill #js-inner {
+  background: linear-gradient(45deg, #c4c731, #e4e004);
+}
+
+body main .about .professional-skills-section .skills-container .skill #jq-inner {
+  background: linear-gradient(45deg, #6f3ce7, #290553);
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-js-inner {
+  background: linear-gradient(45deg, #21ccb0, #045854);
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-redux-inner {
+  background: linear-gradient(45deg, #79f2f7, #027786);
+}
+
+body main .about .professional-skills-section .skills-container .skill #react-router-inner {
+  background: linear-gradient(45deg, #20d6f7, #636262);
+}
+
+body main .about .professional-skills-section .skills-container .skill #photoshop-inner {
+  background: linear-gradient(45deg, #2313f8, #240088);
+}
+
+body main .about .professional-skills-section .skills-container .skill #git-inner {
+  background: linear-gradient(45deg, #585656, #3f3f3e);
+}
+
+body main .about .professional-skills-section .skills-container .skill #responsive-design-inner {
+  background: linear-gradient(45deg, #f5f24b, #dfac06);
+}
+
+body main .about .professional-skills-section .skills-container .skill #wordpress-inner {
+  background: linear-gradient(45deg, #92dbf1, #03b5eb);
+}
+
+body main .about .personal-skills-section .personal-skills-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row: auto;
+  grid-gap: 1em;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfafa), color-stop(#252424), to(#5e6061));
+  background: linear-gradient(0deg, #fdfafa, #252424, #5e6061);
+  font-family: "Abril Fatface";
+  color: #a5a5a5;
+  border-radius: 6px;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 15px 35px 0 rgba(241, 238, 238, 0.7);
+          box-shadow: 0 15px 35px 0 rgba(241, 238, 238, 0.7);
+  background: -webkit-gradient(linear, left bottom, left top, from(#4b4a4a), color-stop(#070707), to(#6b6b6b));
+  background: linear-gradient(0deg, #4b4a4a, #070707, #6b6b6b);
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent {
+  background: #2c1c52;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-outer {
+  stroke: #fff;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-responsible {
+  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
+          animation: progress-personal-skill 1s ease-in-out forwards;
+  stroke: #00ff43;
+  stroke-dashoffset: 0;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-team-player {
+  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
+          animation: progress-personal-skill 1s ease-in-out forwards;
+  stroke: #e618b9;
+  stroke-dashoffset: 0;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-reliable {
+  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
+          animation: progress-personal-skill 1s ease-in-out forwards;
+  stroke: #f1ee1e;
+  stroke-dashoffset: 0;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-fast-learner {
+  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
+          animation: progress-personal-skill 1s ease-in-out forwards;
+  stroke: #f30b0b;
+  stroke-dashoffset: 0;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent .personal-skill-value h3 {
+  color: #fff;
+  font-size: 2.1rem;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-name {
+  color: #fff;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 50px 0 #0c0c0c;
+          box-shadow: 0 0 50px 0 #0c0c0c;
+  background: #141414;
+  z-index: 2;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent svg .circle-outer {
+  stroke: #a5a5a5;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent svg .circle-progress {
+  stroke-dashoffset: 440;
+  stroke-dasharray: 440;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent .personal-skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent .personal-skill-value h3 {
+  font-size: 1.7rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-percent .personal-skill-value h3 span {
+  font-size: 1rem;
+  border-bottom: none;
+}
+
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card .personal-skill-box .personal-skill-name {
+  position: relative;
+  margin-top: 1.5em;
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 700;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+body main .portfolio .portfolio-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  grid-gap: 1.5em;
+}
+
+body main .portfolio .portfolio-container .portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(129, 129, 129, 0.8);
+          box-shadow: 0 5px 10px 0 rgba(129, 129, 129, 0.8);
+}
+
+body main .portfolio .portfolio-container .portfolio-box .img-box {
+  position: relative;
+}
+
+body main .portfolio .portfolio-container .portfolio-box .img-box img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  padding: 1.2em;
+  color: #000;
+}
+
+body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+  padding: 1em 0;
+  text-align: justify;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  color: #333;
+}
+
+body main .portfolio .portfolio-container .portfolio-box .content-portfolio .view {
+  color: #fd3838;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+body main .portfolio .portfolio-container .portfolio-box::before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  opacity: 0;
+  z-index: 1;
+}
+
+body main .portfolio .portfolio-container .portfolio-box::after {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  opacity: 0;
+  z-index: 1;
+}
+
+body main .portfolio .portfolio-container .portfolio-box:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+body main .portfolio .portfolio-container .portfolio-box:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+}
+
+body main .portfolio .portfolio-container .portfolio-box:hover .img-box img {
+  opacity: 0.2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main .portfolio .portfolio-container .portfolio-box:hover .content-portfolio h4,
+body main .portfolio .portfolio-container .portfolio-box:hover .content-portfolio p {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+body main .portfolio .portfolio-container .portfolio-box:hover .content-portfolio .view {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+body main .contact .map-form-container {
+  padding: 3em 0;
+  background-image: url("../assets/images/sections/contact/contactus-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body main .contact .map-form-container .map-container {
+  position: relative;
+  display: block;
+}
+
+body main .contact .map-form-container .map-container .map {
+  width: 100%;
+}
+
+body main .contact .map-form-container .map-container .my-location {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 46%;
+  left: 33%;
+  -webkit-animation: highlight 1.5s linear infinite;
+          animation: highlight 1.5s linear infinite;
+}
+
+body main .contact .contact-info-form-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  grid-gap: 0;
+}
+
+body main .contact .contact-info-form-container .form .contact-form {
+  width: 100%;
+  padding: 1em;
+}
+
+body main .contact .contact-info-form-container .form .contact-form .contact-form-text {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 1em 0;
+  background: inherit;
+  padding: 1em 1.5em;
+  color: #fff;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .contact .contact-info-form-container .form .contact-form .contact-form-text:focus {
+  -webkit-box-shadow: 0 0 10px 4px #d3d5d6;
+          box-shadow: 0 0 10px 4px #d3d5d6;
+}
+
+body main .contact .contact-info-form-container .form .contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  border: 1px solid #fff;
+  background: inherit;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+}
+
+body main .contact .contact-info-form-container .form .contact-form .contact-form-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+body main .contact .contact-info-form-container .contact-info .info {
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "Abril Fatface";
+  line-height: 2.5em;
+}
+
+body main .contact .contact-info-form-container .contact-info .info .contact-title {
+  font-size: 1.4rem;
+}
+
+body main .contact .contact-info-form-container .contact-info .info .contact-link {
+  text-decoration: none;
+  color: #adacac;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .contact .contact-info-form-container .contact-info .info .contact-link:hover {
+  color: #fff;
+}
+
+body footer .footer-menu {
+  width: 100%;
+  height: auto;
+  margin: 1em auto;
+  padding: 0 0 1em;
+}
+
+body footer .footer-menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+body footer .footer-menu ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+body footer .footer-menu ul li a {
+  font-family: "Squada One", cursive;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding-bottom: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#494849)) bottom left no-repeat;
+  background: linear-gradient(0deg, #fff, #494849) bottom left no-repeat;
+  background-size: 0 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .footer-menu ul li a:hover {
+  background-size: 100% 2px;
+}
+
+body footer #copyright {
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+}
+
+body footer #copyright p {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+
+body .scroll-up-btn {
+  position: fixed;
+  display: none;
+  bottom: 1em;
+  right: 1em;
+  color: #fff;
+  padding: 9px 12px;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #fff;
+}
+
+body .scroll-up-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@-webkit-keyframes professional-skill-animation {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes professional-skill-animation {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes progress-personal-skill {
+  from {
+    stroke-dashoffset: 440;
+  }
+}
+
+@keyframes progress-personal-skill {
+  from {
+    stroke-dashoffset: 440;
+  }
+}
+
+@-webkit-keyframes highlight {
+  100% {
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    opacity: 0.8;
+  }
+}
+
+@keyframes highlight {
+  100% {
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body #home {
+    height: 70vh;
+  }
+  body #home #particles-js .header-info-image-container {
+    max-width: 90%;
+    top: 40%;
+  }
+  body main .home {
+    margin: 2em auto;
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 220px;
+    height: 280px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 180px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+    padding: 0 1.2em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+    font-size: 1.6rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+    padding: 0;
+    font-size: 1rem;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1024px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body #home {
+    height: 70vh;
+  }
+  body #home #particles-js .header-info-image-container {
+    max-width: 90%;
+    top: 40%;
+  }
+  body main .home {
+    margin: 2em auto;
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 200px;
+    height: 260px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 170px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+    padding: 0 1.2em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+    font-size: 1.6rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+    padding: 0;
+    font-size: 1rem;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 960px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body #home {
+    height: 70vh;
+  }
+  body #home #particles-js .header-info-image-container {
+    max-width: 90%;
+    top: 40%;
+  }
+  body #home #particles-js .header-info-image-container .header-info {
+    text-align: center;
+    margin: 4em auto;
+  }
+  body #home #particles-js .header-info-image-container .header-info h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+  }
+  body #home #particles-js .header-info-image-container .header-info h5 {
+    padding: 15px 0;
+    font-size: 1.05rem;
+    letter-spacing: 0.2rem;
+  }
+  body #home #particles-js .header-info-image-container .header-image-container {
+    width: 300px;
+    height: 300px;
+    margin: 0.5em auto;
+  }
+  body main .home {
+    margin: 2em auto;
+  }
+  body main .home .website-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    padding: 0 0 4em;
+  }
+  body main .home .website-skills-container .website-skill {
+    width: 100%;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  body main .home .website-skills-container .website-skill .website-skill-image {
+    width: 160px;
+    height: 160px;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info {
+    padding: 1em 3em;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info h3 {
+    padding: 0.3em 0;
+    font-size: 1.8rem;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info p {
+    font-size: 1.2rem;
+  }
+  body main .about .about-info-container .about-info-content {
+    padding: 1em;
+  }
+  body main .about .about-info-container .about-info-content p {
+    font-size: 1.1rem;
+    padding: 0 1em;
+    line-height: 1.2em;
+  }
+  body main .about .certificates-section .certificates-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 0.8em;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face1 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face2 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face1 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .personal-skills-section .personal-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 240px;
+    height: 300px;
+  }
+  body main .portfolio .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 200px;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body .social {
+    padding: 0.5em;
+  }
+  body .social ul li {
+    margin-right: 0.3em;
+  }
+  body .social ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  body .social ul li a i {
+    line-height: 28px;
+  }
+  body #home {
+    height: 80vh;
+  }
+  body #home #particles-js .header-info-image-container {
+    max-width: 90%;
+    top: 50%;
+  }
+  body #home #particles-js .header-info-image-container .header-info {
+    text-align: center;
+    margin: 4em auto;
+  }
+  body #home #particles-js .header-info-image-container .header-info h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  body #home #particles-js .header-info-image-container .header-info h5 {
+    padding: 15px 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.2rem;
+  }
+  body #home #particles-js .header-info-image-container .header-image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0.5em auto;
+  }
+  body main .home {
+    margin: 2em auto;
+  }
+  body main .home .website-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    padding: 0 0 4em;
+  }
+  body main .home .website-skills-container .website-skill .website-skill-image {
+    width: 140px;
+    height: 140px;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info {
+    padding: 1em 3em;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info h3 {
+    padding: 0.3em 0;
+    font-size: 1.6rem;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info p {
+    font-size: 1rem;
+  }
+  body main .home .video-info-container {
+    padding: 2em 0;
+  }
+  body main .about h2,
+  body main .contact h2,
+  body main .portfolio h2 {
+    font-size: 2.2rem;
+  }
+  body main .about .about-info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .about .about-info-container .about-info-title {
+    height: 200px;
+  }
+  body main .about .about-info-container .about-info-content {
+    padding: 1em 0;
+  }
+  body main .about .about-info-container .about-info-content p {
+    font-size: 1.1rem;
+    padding: 0 1em;
+    line-height: 1.2em;
+  }
+  body main .about .certificates-section .title-skills,
+  body main .about .professional-skills-section .title-skills,
+  body main .about .personal-skills-section .title-skills {
+    padding: 1.5em 0;
+    font-size: 1.8rem;
+  }
+  body main .about .certificates-section .certificates-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0.8em;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face1 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face2 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face1 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .personal-skills-section .personal-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 220px;
+    height: 280px;
+  }
+  body main .portfolio .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 260px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+    padding: 4.2em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+    font-size: 1.8rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+    font-size: 1.2rem;
+  }
+  body main .contact .map-form-container {
+    padding: 1em 0 2em;
+  }
+  body main .contact .map-form-container .map-container .my-location {
+    width: 8px;
+    height: 8px;
+  }
+  @-webkit-keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  @keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  body main .contact .contact-info-form-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .contact .contact-info-form-container .form .contact-form {
+    width: 100%;
+    padding: 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-text {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form textarea {
+    resize: none;
+    height: 120px;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
+    padding: 0.3em 1.2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info {
+    padding-top: 4em;
+    line-height: 2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+    font-size: 0.9rem;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+    font-size: 0.7rem;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 540px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body .social {
+    padding: 0.5em;
+  }
+  body .social ul li {
+    margin-right: 0.3em;
+  }
+  body .social ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  body .social ul li a i {
+    line-height: 28px;
+  }
+  body #home {
+    height: 80vh;
+  }
+  body #home #navigation {
+    height: 70px;
+  }
+  body #home #navigation .logo-container {
+    width: 3.2em;
+    height: 3.2em;
+    display: inline-block;
+    margin: 0.5em 0 0;
+  }
+  body #home #navigation #toggle-btn {
+    display: inline-block;
+  }
+  body #home #navigation #main-nav {
+    width: 100%;
+    height: 70px;
+    float: none;
+    background: #171717;
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body #home #navigation #main-nav.active-open-mobile-menu {
+    right: 0;
+  }
+  body #home #navigation #main-nav #menu li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+  }
+  body #home #navigation #main-nav #menu li a {
+    padding: 1em 0 0;
+  }
+  body #home #navigation #main-nav #menu li a i {
+    font-size: 1.6rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  body #home #navigation #main-nav #menu li a p {
+    font-size: 0.9rem;
+    font-family: "Squada One", cursive;
+  }
+  body #home #particles-js {
+    padding-top: 70px;
+  }
+  body #home #particles-js .header-info-image-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    max-width: 90%;
+    top: 40%;
+  }
+  body #home #particles-js .header-info-image-container .header-info {
+    text-align: center;
+    margin: 2em auto;
+  }
+  body #home #particles-js .header-info-image-container .header-info h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  body #home #particles-js .header-info-image-container .header-info h5 {
+    padding: 15px 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.2rem;
+  }
+  body #home #particles-js .header-info-image-container .header-image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0.5em auto;
+  }
+  body main .home {
+    margin: 2em auto;
+  }
+  body main .home .website-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    padding: 0 0 4em;
+  }
+  body main .home .website-skills-container .website-skill .website-skill-image {
+    width: 140px;
+    height: 140px;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info {
+    padding: 1em 5em;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info h3 {
+    padding: 0.3em 0;
+    font-size: 1.6rem;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info p {
+    font-size: 1rem;
+  }
+  body main .home .video-info-container {
+    padding: 2em 0;
+  }
+  body main .home .video-info-container .video-info h1 {
+    font-size: 2.2rem;
+  }
+  body main .home .video-info-container .video-info p {
+    font-size: 1.3rem;
+  }
+  body main .about h2,
+  body main .contact h2,
+  body main .portfolio h2 {
+    font-size: 2.2rem;
+    margin: 1.5em auto;
+  }
+  body main .about .about-info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .about .about-info-container .about-info-title {
+    height: 200px;
+  }
+  body main .about .about-info-container .about-info-content {
+    padding: 1em 0;
+  }
+  body main .about .about-info-container .about-info-content p {
+    font-size: 1.1rem;
+    padding: 0 1em;
+    line-height: 1.2em;
+  }
+  body main .about .certificates-section .title-skills,
+  body main .about .professional-skills-section .title-skills,
+  body main .about .personal-skills-section .title-skills {
+    padding: 1.5em 0;
+    font-size: 1.8rem;
+  }
+  body main .about .certificates-section .certificates-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0.8em;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face1 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face2 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face1 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .personal-skills-section .personal-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 220px;
+    height: 280px;
+  }
+  body main .portfolio .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 220px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+    padding: 4.2em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+    font-size: 1.8rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+    font-size: 1.2rem;
+  }
+  body main .contact .map-form-container {
+    padding: 1em 0 2em;
+  }
+  body main .contact .map-form-container .map-container .my-location {
+    width: 8px;
+    height: 8px;
+  }
+  @-webkit-keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  @keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  body main .contact .contact-info-form-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .contact .contact-info-form-container .form .contact-form {
+    padding: 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-text {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
+    padding: 0.3em 1.2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info {
+    padding-top: 0;
+    line-height: 2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+    font-size: 1.1rem;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+    font-size: 0.9rem;
+  }
+  body footer .footer-social {
+    display: none;
+  }
+  body footer .footer-menu {
+    margin: 1.5em 0;
+    padding: 0;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body .wrapper {
+    max-width: 90%;
+  }
+  body .social {
+    padding: 0.5em;
+  }
+  body .social ul li {
+    margin-right: 0.3em;
+  }
+  body .social ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  body .social ul li a i {
+    line-height: 28px;
+  }
+  body #home {
+    height: 80vh;
+  }
+  body #home #navigation {
+    height: 70px;
+  }
+  body #home #navigation .logo-container {
+    width: 3.2em;
+    height: 3.2em;
+    display: inline-block;
+    margin: 0.5em 0 0;
+  }
+  body #home #navigation #toggle-btn {
+    display: inline-block;
+  }
+  body #home #navigation #main-nav {
+    width: 100%;
+    height: 70px;
+    float: none;
+    background: #171717;
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body #home #navigation #main-nav.active-open-mobile-menu {
+    right: 0;
+  }
+  body #home #navigation #main-nav #menu li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+  }
+  body #home #navigation #main-nav #menu li a {
+    padding: 1em 0 0;
+  }
+  body #home #navigation #main-nav #menu li a i {
+    font-size: 1.6rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  body #home #navigation #main-nav #menu li a p {
+    font-size: 0.9rem;
+    font-family: "Squada One", cursive;
+  }
+  body #home #particles-js {
+    padding-top: 70px;
+  }
+  body #home #particles-js .header-info-image-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    top: 40%;
+  }
+  body #home #particles-js .header-info-image-container .header-info {
+    margin: 2em auto;
+  }
+  body #home #particles-js .header-info-image-container .header-info h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  body #home #particles-js .header-info-image-container .header-info h5 {
+    padding: 15px 0;
+    font-size: 0.95rem;
+  }
+  body #home #particles-js .header-info-image-container .header-image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  body main .home {
+    margin: 3em auto;
+  }
+  body main .home .website-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+    padding: 0 0 4em;
+  }
+  body main .home .website-skills-container .website-skill .website-skill-image {
+    width: 140px;
+    height: 140px;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info {
+    padding: 1em 4em;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info h3 {
+    padding: 0.3em 0;
+    font-size: 1.6rem;
+  }
+  body main .home .website-skills-container .website-skill .website-skills-info p {
+    font-size: 1rem;
+  }
+  body main .home .video-info-container {
+    padding: 2em 0;
+  }
+  body main .home .video-info-container .video-info h1 {
+    font-size: 2rem;
+  }
+  body main .home .video-info-container .video-info p {
+    font-size: 1.1rem;
+  }
+  body main .about h2,
+  body main .contact h2,
+  body main .portfolio h2 {
+    font-size: 1.9rem;
+    margin: 1em auto;
+  }
+  body main .about .about-info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .about .about-info-container .about-info-title {
+    height: 200px;
+  }
+  body main .about .about-info-container .about-info-title .info-title {
+    font-size: 2.4rem;
+  }
+  body main .about .about-info-container .about-info-content {
+    padding: 1em 0;
+  }
+  body main .about .about-info-container .about-info-content p {
+    font-size: 0.9rem;
+    padding: 0 1em;
+    line-height: 1.2em;
+  }
+  body main .about .certificates-section .title-skills,
+  body main .about .professional-skills-section .title-skills,
+  body main .about .personal-skills-section .title-skills {
+    padding: 1.5em 0;
+    font-size: 1.6rem;
+  }
+  body main .about .certificates-section .certificates-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0.8em;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face {
+    width: 220px;
+    height: 160px;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face1 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate:hover .face2 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face1 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 {
+    padding: 1em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 .content span {
+    font-size: 0.65rem;
+    padding: 0.2em 0;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 .content p {
+    font-size: 0.9rem;
+  }
+  body main .about .certificates-section .certificates-container .certificate .face2 .content a {
+    font-size: 0.85rem;
+  }
+  body main .about .professional-skills-section {
+    width: 100%;
+    height: auto;
+  }
+  body main .about .professional-skills-section .skills-container {
+    padding: 2em 0;
+  }
+  body main .about .professional-skills-section .skills-container .skill {
+    font-size: 0.8rem;
+  }
+  body main .about .professional-skills-section .skills-container .skill .skill-name {
+    width: 80px;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .inner-progress {
+    width: 100%;
+  }
+  body main .about .professional-skills-section .skills-container .skill .percent .outer-progress .active-inner-progress {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body main .about .professional-skills-section .skills-container .skill .value {
+    position: relative;
+    width: 45px;
+    text-align: right;
+  }
+  body main .about .personal-skills-section .personal-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .about .personal-skills-section .personal-skills-container .personal-skill-card {
+    width: 200px;
+    height: 260px;
+  }
+  body main .portfolio .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 1em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box {
+    height: 180px;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio {
+    padding: 3.2em;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio h4 {
+    font-size: 1.6rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio p {
+    padding: 0.5em 0;
+    font-size: 0.9rem;
+  }
+  body main .portfolio .portfolio-container .portfolio-box .content-portfolio .view {
+    font-size: 1.1rem;
+  }
+  body main .contact .map-form-container {
+    padding: 1em 0 2em;
+  }
+  body main .contact .map-form-container .map-container .my-location {
+    width: 8px;
+    height: 8px;
+  }
+  @-webkit-keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  @keyframes highlight {
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0.8;
+    }
+  }
+  body main .contact .contact-info-form-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    grid-gap: 0;
+  }
+  body main .contact .contact-info-form-container .form .contact-form {
+    padding: 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-text {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+  }
+  body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
+    padding: 0.3em 1.2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info {
+    padding-top: 0;
+    line-height: 2em;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+    font-size: 0.9rem;
+  }
+  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+    font-size: 0.7rem;
+  }
+  body footer .footer-social {
+    display: none;
+  }
+  body footer .footer-menu {
+    margin: 1.5em 0;
+    padding: 0;
+  }
+  body footer .footer-menu ul li {
+    margin: 0 0.5em;
+  }
+  body footer .footer-menu ul li a {
+    font-size: 0.9rem;
+  }
+  body .scroll-up-btn {
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 5px 8px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

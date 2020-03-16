@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+  <link href="https://fonts.googleapis.com/css?family=Akronim|Odibee+Sans|Abril+Fatface|Squada+One&display=swap"
+    rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./styles/portfolio.css" />
+  <link rel="icon" href="./assets/images/logo/logo-portfolio.png" />
+  <title>Portfolio JS</title>
+</head>
+
+<body>
+  <header id="home">
+    <div id="navigation">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a class="logo" href="#home">
+            <img src="./assets/images/logo/logo-portfolio.png" alt="logo-portfolio.png" />
+          </a>
+        </div>
+
+        <div id="toggle-btn">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul id="menu">
+            <li class="active">
+              <a href="#home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>About</p>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <p>Portfolio</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="particles-js">
+      <div class="header-info-image-container">
+        <div class="header-info">
+          <h1>I'm Tonyo Vanov</h1>
+          <h5>Developer // Designer</h5>
+        </div>
+        <div class="header-image-container"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="home">
+      <div class="wrapper">
+        <div class="website-skills-container">
+          <div class="website-skill fast wow fadeIn">
+            <div class="website-skill-image fast-img"></div>
+            <div class="website-skills-info">
+              <h3>Fast</h3>
+              <p>
+                Fast load times and lag free interaction, my highest
+                priority.
+              </p>
+            </div>
+          </div>
+          <div class="website-skill responsive wow fadeIn">
+            <div class="website-skill-image responsive-img"></div>
+            <div class="website-skills-info">
+              <h3>Responsive</h3>
+              <p>My layouts will work on any device, big or small.</p>
+            </div>
+          </div>
+          <div class="website-skill intuitive wow fadeIn">
+            <div class="website-skill-image intuitive-img"></div>
+            <div class="website-skills-info">
+              <h3>Intuitive</h3>
+              <p>Strong preference for easy to use, intuitive UX/UI.</p>
+            </div>
+          </div>
+          <div class="website-skill dynamic wow fadeIn">
+            <div class="website-skill-image dynamic-img"></div>
+            <div class="website-skills-info">
+              <h3>Dynamic</h3>
+              <p>
+                Websites don't have to be static, I love making pages come
+                to life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-info-container">
+        <div class="wrapper">
+          <div class="video-info">
+            <h1>Writing, made simple.</h1>
+            <p>
+              Everyone can write, but not everyone is a writer. What makes
+              the difference is the keen eye for detail and beauty.
+            </p>
+          </div>
+
+          <div class="video">
+            <video muted autoplay="autoplay" loop="loop">
+              <source src="./assets/images/sections/home/video/typing.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2><span>About me</span></h2>
+      <div class="wrapper">
+
+        <div class="about-info-container">
+          <div class="about-info-title">
+            <h3 class="info-title">Who am I?</h3>
+          </div>
+          <div class="about-info-content">
+            <p>
+              Motivated, quick learning, energetic person with
+              ambition to work and learn from the best in
+              field. Person with great interest in IT world with
+              bright vision in future and motivated to cover
+              different targets.
+              <br />
+              To work for a growing up company that will
+              provide me with the possibility of growing within
+              it and will allow the development my abilities
+              and skills in favor of the company’s mission
+              and my environment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificates-section">
+        <h3 class="title-skills">Certificates</h3>
+        <div class="wrapper">
+          <div class="certificates-container">
+            <div class="certificate">
+              <div class="face face1 microsoft"></div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>Front End Developer</h3>
+                  <span>07/2019</span>
+                  <p>
+                    HTML5, CSS3, JavaScript, jQuery, Object-based
+                    Programming, Application Developer, Data Security, Data
+                    Validation, Visual Studio, Web Developer
+                  </p>
+                  <a href="https://www.youracclaim.com/badges/50bed4f8-3ced-4969-ba18-baef88cc05d3/linked_in_profile"
+                    target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="certificate">
+              <div class="face face1 telerik-fe"></div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>Front End Developer</h3>
+                  <span>10/2018</span>
+                  <p>
+                    HTML5, CSS3, SASS, React JS, React Redux, React Router,
+                    JavaScript, jQuery, Axios, Ajax/JSON, Responsive Design,
+                    Bootstrap, Adobe Photoshop
+                  </p>
+                  <a href="https://www.telerikacademy.com/" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="certificate">
+              <div class="face face1 telerik-ui-ux"></div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>UI/UX Design</h3>
+                  <span>10/2018</span>
+                  <p>
+                    Adobe-Photoshop, UI/UX Architecture, UI/UX Animations, User Interface Design,
+                    Typography Design, Responsive Design, Colors, Gradients, Positioning,
+                  </p>
+                  <a href="https://www.telerikacademy.com/" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="professional-skills-section">
+        <h3 class="title-skills">Professional Skills</h3>
+        <div class="skills-container">
+          <div class="wrapper">
+            <div class="skill">
+              <span class="skill-name">HTML5</span>
+              <div class="percent">
+                <div id="html-outer" class="outer-progress">
+                  <div id="html-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">90%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">CSS3</span>
+              <div class="percent">
+                <div id="css-outer" class="outer-progress">
+                  <div id="css-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">75%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">SASS</span>
+              <div class="percent">
+                <div id="sass-outer" class="outer-progress">
+                  <div id="sass-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">80%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">JavaScript</span>
+              <div class="percent">
+                <div id="js-outer" class="outer-progress">
+                  <div id="js-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">60%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">jQuery</span>
+              <div class="percent">
+                <div id="jq-outer" class="outer-progress">
+                  <div id="jq-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">65%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">React JS</span>
+              <div class="percent">
+                <div id="react-js-outer" class="outer-progress">
+                  <div id="react-js-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">70%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">React-Redux</span>
+              <div class="percent">
+                <div id="react-redux-outer" class="outer-progress">
+                  <div id="react-redux-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">50%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">React-Router</span>
+              <div class="percent">
+                <div id="react-router-outer" class="outer-progress">
+                  <div id="react-router-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">65%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Git</span>
+              <div class="percent">
+                <div id="git-outer" class="outer-progress">
+                  <div id="git-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">60%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Responsive Design</span>
+              <div class="percent">
+                <div id="responsive-design-outer" class="outer-progress">
+                  <div id="responsive-design-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">80%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">WordPress</span>
+              <div class="percent">
+                <div id="wordpress-outer" class="outer-progress">
+                  <div id="wordpress-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">50%</span>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Photoshop</span>
+              <div class="percent">
+                <div id="photoshop-outer" class="outer-progress">
+                  <div id="photoshop-inner" class="inner-progress"></div>
+                </div>
+              </div>
+              <span class="value">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="personal-skills-section">
+        <h3 class="title-skills">Personal Skills</h3>
+        <div class="wrapper">
+          <div class="personal-skills-container">
+            <div class="personal-skill-card">
+              <div class="personal-skill-box">
+                <div class="personal-skill-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-outer"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-progress circle-progress-responsible"></circle>
+                  </svg>
+                  <div class="personal-skill-value">
+                    <h3>100<span>%</span></h3>
+                  </div>
+                </div>
+                <h3 class="personal-skill-name">Responsible</h3>
+              </div>
+            </div>
+            <div class="personal-skill-card">
+              <div class="personal-skill-box">
+                <div class="personal-skill-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-outer"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-progress circle-progress-team-player"></circle>
+                  </svg>
+                  <div class="personal-skill-value">
+                    <h3>100<span>%</span></h3>
+                  </div>
+                </div>
+                <h3 class="personal-skill-name">Team Player</h3>
+              </div>
+            </div>
+            <div class="personal-skill-card">
+              <div class="personal-skill-box">
+                <div class="personal-skill-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-outer"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-progress circle-progress-reliable"></circle>
+                  </svg>
+                  <div class="personal-skill-value">
+                    <h3>100<span>%</span></h3>
+                  </div>
+                </div>
+                <h3 class="personal-skill-name">Reliable</h3>
+              </div>
+            </div>
+            <div class="personal-skill-card">
+              <div class="personal-skill-box">
+                <div class="personal-skill-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-outer"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-progress circle-progress-fast-learner"></circle>
+                  </svg>
+                  <div class="personal-skill-value">
+                    <h3>100<span>%</span></h3>
+                  </div>
+                </div>
+                <h3 class="personal-skill-name">Fast Learner </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2><span>Portfolio</span></h2>
+      <div class="wrapper">
+        <div class="portfolio-container">
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/portfolio-react.png" alt="portfolio-react.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>Portfolio React JS</h4>
+              <p>React Js, React Router, React Libraries, Webpack, HTML5, CSS3, SASS, SVG, UI/UX Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/portfolio-js.png" alt="portfolio-js.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>Portfolio JavaScript</h4>
+              <p>HTML5, CSS3, SASS, SVG, JavaScript ES6, jQuery, JavaScript Libraries, UI/UX Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/little-barber.png" alt="little-barber.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>Little Barbershop</h4>
+              <p>HTML5, CSS3, SASS, JavaScript ES6, jQuery, JavaScript Libraries, UI/UX Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/beauty-wrap.png" alt="beauty-wrap.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>Beauty Wrap</h4>
+              <p>React Js, React Router, React Libraries, Webpack, HTML5, CSS3, SASS, SVG, UI/UX Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+          </div>
+
+          <div href="https://github.com/tonyo88" target="_blank" class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/memory-game.png" alt="memory-game.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>Memory Game</h4>
+              <p>HTML5, CSS3, CSS3 Modules, SASS, SVG, JavaScript ES6, jQuery, Asynchronous Operations, Sound Effects,
+                UI/UX
+                Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="./assets//images/sections/portfolio/sushi.png" alt="sushi.png">
+            </div>
+            <div class="content-portfolio">
+              <h4>California Roll</h4>
+              <p>HTML5, CSS3, SASS, JavaScript ES6, jQuery, JavaScript Libraries, UI/UX Architecture, UI/UX
+                Animations, Responsive Design, Visual Studio Code, Adobe Photoshop</p>
+              <a class="view" href="https://github.com/tonyo88" target="_blank">View SRC...</a>
+            </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="map-form-container">
+        <div class="wrapper">
+          <h2 class="contact-title"><span>Contact Me</span></h2>
+          <a class="map-container" href="https://goo.gl/maps/zuXiebKU8XnPp3rw8" target="_blank">
+            <img class="map" src="./assets/images/sections/contact/map-new.png" alt="map-new.png">
+            <img class="my-location" src="./assets/images/sections/contact/map-profile-picture.png"
+              alt="map-profile-picture.png"></img>
+          </a>
+
+          <div class="contact-info-form-container">
+            <div class="form">
+              <form class="contact-form" action="index.html" method="post">
+                <input class="contact-form-text" name="name" type="text" placeholder="Your Name" required="required">
+                <input class="contact-form-text" name="email" type="email" placeholder="Your Email" required="required">
+                <input class="contact-form-text" name="phone" type="tel" placeholder="Your Phone" required="required">
+                <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="info">
+                <p>
+                  <strong class="contact-title">Tonyo Vanov</strong>
+                  <br />
+                  Iowa Ave, Los Angeles, CA, 90025
+                  <br />
+                  <strong class="contact-title">Phone: </strong> <a class="contact-link"
+                    href="tel:+1-310-923-0276">+1.310.923.0276</a>
+                  <br />
+                  <strong class="contact-title">Email: </strong> <a class="contact-link"
+                    href="mailto:tonyo_vanov@yahoo.com">tonyo_vanov@yahoo.com</a>
+                </p>
+              </div>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/tonyo-vanov-850657148/" target="_blank">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/tonyo88" target="_blank">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:tonyo_vanov@yahoo.com">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social footer-social">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tonyo-vanov-850657148/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/tonyo88" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:tonyo_vanov@yahoo.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="copyright">
+      <p>&copy Tonyo Vanov 2020</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="scroll-up-btn">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="./assets/js-libraries/particles.js"></script>
+  <script src="./assets/js-libraries/app.js"></script>
+  <script src="./assets/js-libraries/wow.min.js"></script>
+  <script src="./script/nav-current-link.js"></script>
+  <script src="./script/portfolio.js"></script>
+</body>
+
+</html>

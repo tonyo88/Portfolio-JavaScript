@@ -48,10 +48,7 @@ $bg-personal-skill-percent: #141414;
 $personal-skill-name-color: #1f1f1f;
 $hover-bg-personal-skill-percent: #2c1c52;
 $circle-outer-color: $personal-text-color;
-$responsible-stroke-color: #00ff43;
-$team-player-stroke-color: #e618b9;
-$reliable-stroke-color: #f1ee1e;
-$fast-learner-stroke-color: #f30b0b;
+$hover-stroke-color: $main-color;
 
 //Portfolio
 
@@ -313,10 +310,6 @@ body {
             width: 100px;
             height: 80px;
 
-            // .first-active {
-            //   @include active-link();
-            // }
-
             &.active {
               @include active-link();
             }
@@ -480,9 +473,6 @@ body {
       }
 
       .video-info-container {
-        background-image: url("../assets//images/sections/home/video/bg-video.jpg");
-        @include background-image-position();
-        background-attachment: fixed;
         padding: 5em 0;
 
         .video {
@@ -914,24 +904,12 @@ body {
                   background: $hover-bg-personal-skill-percent;
 
                   svg {
-                    .circle-outer {
-                      stroke: $hover-text-color;
-                    }
 
-                    .circle-progress-responsible {
-                      @include progress-personal-skill ($responsible-stroke-color, 100);
-                    }
-
-                    .circle-progress-team-player {
-                      @include progress-personal-skill ($team-player-stroke-color, 100);
-                    }
-
-                    .circle-progress-reliable {
-                      @include progress-personal-skill ($reliable-stroke-color, 100);
-                    }
-
-                    .circle-progress-fast-learner {
-                      @include progress-personal-skill ($fast-learner-stroke-color, 100);
+                    .circle-progress-responsible,
+                    .circle-progress-team-player,
+                    .circle-progress-reliable,
+                    .circle-progress-fast-learner{
+                      @include progress-personal-skill ($hover-stroke-color, 100);
                     }
                   }
 
@@ -1219,15 +1197,17 @@ body {
         }
 
         .contact-info {
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         .contact-info-container{
           .info {
-            padding-top: 5em;
             display: flex;
             justify-content: center;
             align-items: center;
             color: $main-color;
             font-family: 'Abril Fatface', ;
-            line-height: 2.5em;
+            line-height: 2em;
 
             .contact-title {
               font-size: 1.4rem;
@@ -1243,6 +1223,7 @@ body {
               }
             }
           }
+        }
         }
       }
     }
@@ -1781,7 +1762,6 @@ body {
       .portfolio {
         h2 {
           font-size: 2.2rem;
-          // margin: 1.5em auto;
         }
       }
 
@@ -1938,19 +1918,17 @@ body {
           }
 
           .contact-info {
-
+           .contact-info-container{
             .info {
-              padding-top: 4em;
-              line-height: 2em;
-
               .contact-title {
                 font-size: 0.9rem;
               }
 
               .contact-link {
                 font-size: 0.7rem;
-              }
-            }
+               }
+             }
+           }
           }
         }
       }
@@ -2283,17 +2261,18 @@ body {
           }
 
           .contact-info {
+            .contact-info-container{
 
-            .info {
-              padding-top: 0;
-              line-height: 2em;
+              .info {
+                line-height: 1.5em;
 
-              .contact-title {
-                font-size: 1.1rem;
-              }
+                .contact-title {
+                  font-size: 1.1rem;
+                }
 
-              .contact-link {
-                font-size: 0.9rem;
+                .contact-link {
+                  font-size: 0.9rem;
+                }
               }
             }
           }
@@ -2681,17 +2660,17 @@ body {
           }
 
           .contact-info {
+            .contact-info-container{
+              .info {
+                line-height: 1.5em;
 
-            .info {
-              padding-top: 0;
-              line-height: 2em;
+                .contact-title {
+                  font-size: 0.9rem;
+                }
 
-              .contact-title {
-                font-size: 0.9rem;
-              }
-
-              .contact-link {
-                font-size: 0.7rem;
+                .contact-link {
+                  font-size: 0.7rem;
+                }
               }
             }
           }

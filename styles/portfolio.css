@@ -359,11 +359,6 @@ body main .home .website-skills-container .website-skill .website-skills-info p 
 }
 
 body main .home .video-info-container {
-  background-image: url("../assets//images/sections/home/video/bg-video.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 5em 0;
 }
 
@@ -852,35 +847,13 @@ body main .about .personal-skills-section .personal-skills-container .personal-s
   background: #2c1c52;
 }
 
-body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-outer {
-  stroke: #fff;
-}
-
-body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-responsible {
-  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
-          animation: progress-personal-skill 1s ease-in-out forwards;
-  stroke: #00ff43;
-  stroke-dashoffset: 0;
-}
-
-body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-team-player {
-  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
-          animation: progress-personal-skill 1s ease-in-out forwards;
-  stroke: #e618b9;
-  stroke-dashoffset: 0;
-}
-
-body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-reliable {
-  -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
-          animation: progress-personal-skill 1s ease-in-out forwards;
-  stroke: #f1ee1e;
-  stroke-dashoffset: 0;
-}
-
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-responsible,
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-team-player,
+body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-reliable,
 body main .about .personal-skills-section .personal-skills-container .personal-skill-card:hover .personal-skill-box .personal-skill-percent svg .circle-progress-fast-learner {
   -webkit-animation: progress-personal-skill 1s ease-in-out forwards;
           animation: progress-personal-skill 1s ease-in-out forwards;
-  stroke: #f30b0b;
+  stroke: #fff;
   stroke-dashoffset: 0;
 }
 
@@ -1206,8 +1179,19 @@ body main .contact .contact-info-form-container .form .contact-form .contact-for
   color: #000;
 }
 
-body main .contact .contact-info-form-container .contact-info .info {
-  padding-top: 5em;
+body main .contact .contact-info-form-container .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .contact .contact-info-form-container .contact-info .contact-info-container .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1219,21 +1203,21 @@ body main .contact .contact-info-form-container .contact-info .info {
           align-items: center;
   color: #fff;
   font-family: "Abril Fatface";
-  line-height: 2.5em;
+  line-height: 2em;
 }
 
-body main .contact .contact-info-form-container .contact-info .info .contact-title {
+body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-title {
   font-size: 1.4rem;
 }
 
-body main .contact .contact-info-form-container .contact-info .info .contact-link {
+body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link {
   text-decoration: none;
   color: #adacac;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body main .contact .contact-info-form-container .contact-info .info .contact-link:hover {
+body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link:hover {
   color: #fff;
 }
 
@@ -1785,14 +1769,10 @@ body .scroll-up-btn:hover {
   body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
     padding: 0.3em 1.2em;
   }
-  body main .contact .contact-info-form-container .contact-info .info {
-    padding-top: 4em;
-    line-height: 2em;
-  }
-  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-title {
     font-size: 0.9rem;
   }
-  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link {
     font-size: 0.7rem;
   }
   body .scroll-up-btn {
@@ -2070,14 +2050,13 @@ body .scroll-up-btn:hover {
   body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
     padding: 0.3em 1.2em;
   }
-  body main .contact .contact-info-form-container .contact-info .info {
-    padding-top: 0;
-    line-height: 2em;
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info {
+    line-height: 1.5em;
   }
-  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-title {
     font-size: 1.1rem;
   }
-  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link {
     font-size: 0.9rem;
   }
   body footer .footer-social {
@@ -2395,14 +2374,13 @@ body .scroll-up-btn:hover {
   body main .contact .contact-info-form-container .form .contact-form .contact-form-btn {
     padding: 0.3em 1.2em;
   }
-  body main .contact .contact-info-form-container .contact-info .info {
-    padding-top: 0;
-    line-height: 2em;
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info {
+    line-height: 1.5em;
   }
-  body main .contact .contact-info-form-container .contact-info .info .contact-title {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-title {
     font-size: 0.9rem;
   }
-  body main .contact .contact-info-form-container .contact-info .info .contact-link {
+  body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link {
     font-size: 0.7rem;
   }
   body footer .footer-social {

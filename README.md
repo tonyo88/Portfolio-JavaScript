@@ -21,6 +21,13 @@ Technologies
 * Visual Studio Code
 * Adobe Photoshop
 
+How to run it?
+---
+```
+  clone or download repository
+  https://github.com/tonyo88/Portfolio-JavaScript.git
+```
+
 Overview
 ---
 ![Screenshot (19)](https://user-images.githubusercontent.com/45981967/80264320-a90a1900-8648-11ea-89d2-37176949ee1d.png)

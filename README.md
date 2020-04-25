@@ -25,8 +25,8 @@ How to run it?
 ---
 ```
   clone or download repository
-  https://github.com/tonyo88/Portfolio-JavaScript.git
 ```
+https://github.com/tonyo88/Portfolio-JavaScript.git
 
 Overview
 ---

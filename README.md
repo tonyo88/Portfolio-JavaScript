@@ -31,4 +31,9 @@ https://github.com/tonyo88/Portfolio-JavaScript.git
 
 Overview
 ---
-![Screenshot (19)](https://user-images.githubusercontent.com/45981967/80264320-a90a1900-8648-11ea-89d2-37176949ee1d.png)
+
+![portfolio-js-home](https://user-images.githubusercontent.com/45981967/80311052-65232b00-8792-11ea-9129-891b5a98f629.png)
+![portfolio-js-skills](https://user-images.githubusercontent.com/45981967/80311056-6a807580-8792-11ea-96c6-bd4402a8bf83.png)
+![portfolio-js-portf](https://user-images.githubusercontent.com/45981967/80311057-6d7b6600-8792-11ea-9de8-19f3fc1adf78.png)
+![portfolio-js-contact](https://user-images.githubusercontent.com/45981967/80311060-6f452980-8792-11ea-9f81-bde3f55ee87f.png)
+

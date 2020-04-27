@@ -7,6 +7,9 @@ About
 ---
 I have created this project to represent myself, experience and current knowledge over the years.
 
+
+In this project, I demonstrate the communication between HTML, CSS and JavaScript and the creation of dynamic content and DOM manipulations.
+
 Technologies
 ---
 **Code technologies I got involved with while working on this project.**

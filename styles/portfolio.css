@@ -245,11 +245,16 @@ body #home #particles-js .header-info-image-container .header-info {
 
 body #home #particles-js .header-info-image-container .header-info h1 {
   padding: 1em 0 0;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 3rem;
   letter-spacing: 2px;
   font-family: "Akronim", cursive;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+body #home #particles-js .header-info-image-container .header-info h1 span {
+  font-family: "Odibee Sans", cursive;
+  font-weight: 500;
 }
 
 body #home #particles-js .header-info-image-container .header-info h5 {

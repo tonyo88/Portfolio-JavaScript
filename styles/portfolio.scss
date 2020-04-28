@@ -370,11 +370,17 @@ body {
 
           h1 {
             padding: 1em 0 0;
-            font-weight: bold;
+            font-weight: 800;
             font-size: 3rem;
             letter-spacing: 2px;
             font-family: "Akronim", cursive;
             text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+
+            span {
+              font-family: "Odibee Sans", cursive;
+              font-weight: 500;
+            }
+
           }
 
           h5 {
@@ -908,7 +914,7 @@ body {
                     .circle-progress-responsible,
                     .circle-progress-team-player,
                     .circle-progress-reliable,
-                    .circle-progress-fast-learner{
+                    .circle-progress-fast-learner {
                       @include progress-personal-skill ($hover-stroke-color, 100);
                     }
                   }
@@ -1200,30 +1206,31 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-         .contact-info-container{
-          .info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $main-color;
-            font-family: 'Abril Fatface', ;
-            line-height: 2em;
 
-            .contact-title {
-              font-size: 1.4rem;
-            }
+          .contact-info-container {
+            .info {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $main-color;
+              font-family: 'Abril Fatface', ;
+              line-height: 2em;
 
-            .contact-link {
-              text-decoration: none;
-              color: #adacac;
-              transition: 0.3s;
+              .contact-title {
+                font-size: 1.4rem;
+              }
 
-              &:hover {
-                color: $main-color;
+              .contact-link {
+                text-decoration: none;
+                color: #adacac;
+                transition: 0.3s;
+
+                &:hover {
+                  color: $main-color;
+                }
               }
             }
           }
-        }
         }
       }
     }
@@ -1918,17 +1925,17 @@ body {
           }
 
           .contact-info {
-           .contact-info-container{
-            .info {
-              .contact-title {
-                font-size: 0.9rem;
-              }
+            .contact-info-container {
+              .info {
+                .contact-title {
+                  font-size: 0.9rem;
+                }
 
-              .contact-link {
-                font-size: 0.7rem;
-               }
-             }
-           }
+                .contact-link {
+                  font-size: 0.7rem;
+                }
+              }
+            }
           }
         }
       }
@@ -2261,7 +2268,7 @@ body {
           }
 
           .contact-info {
-            .contact-info-container{
+            .contact-info-container {
 
               .info {
                 line-height: 1.5em;
@@ -2660,7 +2667,7 @@ body {
           }
 
           .contact-info {
-            .contact-info-container{
+            .contact-info-container {
               .info {
                 line-height: 1.5em;
 

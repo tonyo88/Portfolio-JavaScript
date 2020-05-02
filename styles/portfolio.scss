@@ -5,6 +5,7 @@ $second-main-color: #000;
 $text-color: #333;
 $second-text-color: #b2b2b2;
 $content-background: linear-gradient(90deg, rgba(116, 116, 116, 1) 17%, rgba(42, 41, 41, 1) 45%, rgba(15, 15, 15, 1) 94%);
+$error-color: #F90A0A;
 
 //Menu
 
@@ -800,7 +801,7 @@ body {
             }
 
             #git-outer {
-              width: 60%;
+              width: 70%;
             }
 
             #responsive-design-outer {
@@ -1180,6 +1181,18 @@ body {
 
             }
 
+            .contact-error-input {
+              border: 1px solid $error-color;
+              @include box-shadow(0, 0, 10px, 4px, $error-color);
+            }
+
+            .error-message {
+              color: $error-color;
+              font-family: 'Barlow Condensed', sans-serif;
+              letter-spacing: 1px;
+              font-size: 0.8rem;
+            }
+
             textarea {
               resize: none;
               height: 120px;
@@ -1213,11 +1226,12 @@ body {
               justify-content: center;
               align-items: center;
               color: $main-color;
-              font-family: 'Abril Fatface', ;
+              font-family: 'Barlow Condensed', sans-serif;
               line-height: 2em;
+              font-size: 1.2rem;
 
               .contact-title {
-                font-size: 1.4rem;
+                font-size: 1.7rem;
               }
 
               .contact-link {

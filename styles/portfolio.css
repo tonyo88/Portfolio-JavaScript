@@ -732,7 +732,7 @@ body main .about .professional-skills-section .skills-container .skill #react-ro
 }
 
 body main .about .professional-skills-section .skills-container .skill #git-outer {
-  width: 60%;
+  width: 70%;
 }
 
 body main .about .professional-skills-section .skills-container .skill #responsive-design-outer {
@@ -1163,6 +1163,19 @@ body main .contact .contact-info-form-container .form .contact-form .contact-for
           box-shadow: 0 0 10px 4px #d3d5d6;
 }
 
+body main .contact .contact-info-form-container .form .contact-form .contact-error-input {
+  border: 1px solid #F90A0A;
+  -webkit-box-shadow: 0 0 10px 4px #F90A0A;
+          box-shadow: 0 0 10px 4px #F90A0A;
+}
+
+body main .contact .contact-info-form-container .form .contact-form .error-message {
+  color: #F90A0A;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
 body main .contact .contact-info-form-container .form .contact-form textarea {
   resize: none;
   height: 120px;
@@ -1207,12 +1220,13 @@ body main .contact .contact-info-form-container .contact-info .contact-info-cont
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-family: "Abril Fatface";
+  font-family: 'Barlow Condensed', sans-serif;
   line-height: 2em;
+  font-size: 1.2rem;
 }
 
 body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-title {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 body main .contact .contact-info-form-container .contact-info .contact-info-container .info .contact-link {

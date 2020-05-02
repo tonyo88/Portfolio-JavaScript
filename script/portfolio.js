@@ -38,6 +38,95 @@ window.onload = () => {
     $(".skills-container").mousemove(() => {
      $(".skill .percent .outer-progress .inner-progress").addClass("active-inner-progress");
     });
+
+
+    //Form Validation
+
+    $(function (){
+
+      $("#fname_error_message").hide();
+      $("#lname_error_message").hide();
+      $("#email_error_message").hide();
+
+      var error_fname = false;
+      var error_lname = false;
+      var error_email = false;
+ 
+      $("#form-fname").focusout(function () {
+        checkFirstName();
+      });
+      $("#form-lname").focusout(function () {
+        checkLastName();
+      });
+      $("#form-email").focusout(function () {
+        checkEmail();
+      });
+
+      function checkFirstName () {    
+        let pattern = /^[a-zA-Z]*$/;
+        let fname = $("#form-fname").val();
+
+        if(pattern.test(fname) && fname !== '') {
+          $("#fname_error_message").hide();
+          $("#form-fname").removeClass("contact-error-input");
+        } else{
+          $("#fname_error_message").html("Should contain only Characters");
+          $("#fname_error_message").show();
+          $("#form-fname").addClass("contact-error-input");
+          error_fname = true;
+        }
+      };
+
+      function checkLastName () {    
+        let pattern = /^[a-zA-Z]*$/;
+        let lname = $("#form-lname").val();
+
+        if(pattern.test(lname) && lname !== '') {
+          $("#lname_error_message").hide();
+          $("#form-lname").removeClass("contact-error-input");
+        } else{
+          $("#lname_error_message").html("Should contain only Characters");
+          $("#lname_error_message").show();
+          $("#form-lname").addClass("contact-error-input");
+          error_lname = true;
+        }
+      };
+
+      function checkEmail () {    
+        let pattern = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let email = $("#form-email").val();
+
+        if(pattern.test(email) && email !== '') {
+          $("#email_error_message").hide();
+          $("#form-email").removeClass("contact-error-input");
+        } else{
+          $("#email_error_message").html("Invalid Email Address!");
+          $("#email_error_message").show();
+          $("#form-email").addClass("contact-error-input");
+          error_email = true;
+        }
+      };
+
+      $(".contact-form").submit(() =>{
+        error_fname = false;
+        error_lname = false;
+        error_email = false;
+
+        checkFirstName ();
+        checkLastName ();
+        checkEmail ();
+
+        if(error_fname === false &&
+           error_lname === false &&
+           error_email === false) {
+             alert("Registration Successefull!");
+             return true;
+          } else{
+             return false;
+         }
+      });
+
+    });
     
   });
 

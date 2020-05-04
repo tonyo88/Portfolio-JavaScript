@@ -119,7 +119,7 @@ window.onload = () => {
         if(error_fname === false &&
            error_lname === false &&
            error_email === false) {
-             alert("Registration Successefull!");
+             alert("Success!");
              return true;
           } else{
              return false;
